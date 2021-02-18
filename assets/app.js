@@ -7,8 +7,11 @@ const emailInput = document.querySelector('.emailIn');
 const pwdInput = document.querySelector('.pwdIn');
 const loginAccont = document.querySelector('.loginAcc');
 const hiYou= document.querySelector('.logInHi');
-const hiYou= document.querySelector('.beforeLog');
-const hiYou= document.querySelector('.afterLog');
+let showLog = true;
+const hideAf= document.querySelector('.beforeLog');
+const showAf= document.querySelector('.afterLog');
+
+showLog? showAf.style.display = 'none': showAf.style.opacity = 100; ;
 
 loginAccont.addEventListener('click', function (e) {
     // Prevent form from submitting
@@ -19,13 +22,20 @@ loginAccont.addEventListener('click', function (e) {
     console.log(userInfo)
 
     if (userInfo?.password === pwdInput.value){
-        alert('Logged in!');
+         alert('Logged in!');
+         showLog= false;
         emailInput.value = pwdInput.value = '';
 
         hiYou.textContent= `Hello ${userInfo.name}!!!`
 
+        hideAf.style.display = "none";
+        
+
+
     }else{
-        alert('Incorrect password')
+        alert('Incorrect password');
+        showLog=true;
+        
     }; 
     inputLoginUsername.value = inputLoginPin.value = '';
     inputLoginPin.blur();

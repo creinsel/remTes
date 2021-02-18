@@ -1,7 +1,10 @@
-.beforeLog{
-    opacity:1;
+body{
+    color: chartreuse;
+    background-color: crimson;
 }
 
-.afterLog{
-    opacity: 0;
-}
+
+
+
+
+

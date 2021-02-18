@@ -7,6 +7,8 @@ const emailInput = document.querySelector('.emailIn');
 const pwdInput = document.querySelector('.pwdIn');
 const loginAccont = document.querySelector('.loginAcc');
 const hiYou= document.querySelector('.logInHi');
+const hiYou= document.querySelector('.beforeLog');
+const hiYou= document.querySelector('.afterLog');
 
 loginAccont.addEventListener('click', function (e) {
     // Prevent form from submitting
@@ -17,13 +19,13 @@ loginAccont.addEventListener('click', function (e) {
     console.log(userInfo)
 
     if (userInfo?.password === pwdInput.value){
-        alert('logged in hoe');
+        alert('Logged in!');
         emailInput.value = pwdInput.value = '';
 
         hiYou.textContent= `Hello ${userInfo.name}!!!`
 
     }else{
-        alert('nooooo')
+        alert('Incorrect password')
     }; 
     inputLoginUsername.value = inputLoginPin.value = '';
     inputLoginPin.blur();

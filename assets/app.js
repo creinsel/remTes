@@ -1,7 +1,21 @@
 'use strict';
 
 // import {user} from './users.js';
+const user1 = {
+    name: 'Cassondra Reinsel',
+    email: 'creinsel@has.edu',
+    phone: 5109383637,
+    password: 'testing123'
+}
 
+const user2 = {
+    name: 'Cassie Reinsel',
+    email: 'cassiereinsel@gmail.com',
+    phone: 5103203904,
+    password: 'testing223'
+}
+
+const proctors = [user1, user2];
 let userInfo;
 const emailInput = document.querySelector('.emailIn');
 const pwdInput = document.querySelector('.pwdIn');
@@ -11,7 +25,11 @@ let showLog = true;
 const hideAf= document.querySelector('.beforeLog');
 const showAf= document.querySelector('.afterLog');
 
-showLog? showAf.style.display = 'none': showAf.style.opacity = 100; ;
+hideAf.style.display = "block";
+
+
+showLog? showAf.style.display = 'none': showAf.style.display = 'null';
+
 
 loginAccont.addEventListener('click', function (e) {
     // Prevent form from submitting
@@ -25,12 +43,8 @@ loginAccont.addEventListener('click', function (e) {
          alert('Logged in!');
          showLog= false;
         emailInput.value = pwdInput.value = '';
-
-        hiYou.textContent= `Hello ${userInfo.name}!!!`
-
         hideAf.style.display = "none";
-        
-
+        hiYou.textContent= `Hello ${userInfo.name}!!!`
 
     }else{
         alert('Incorrect password');

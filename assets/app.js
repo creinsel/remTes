@@ -1,21 +1,7 @@
 'use strict';
 
 // import {user} from './users.js';
-const user1 = {
-    name: 'Cassondra Reinsel',
-    email: 'creinsel@has.edu',
-    phone: 5109383637,
-    password: 'testing123'
-}
 
-const user2 = {
-    name: 'Cassie Reinsel',
-    email: 'cassiereinsel@gmail.com',
-    phone: 5103203904,
-    password: 'testing223'
-}
-
-const proctors = [user1, user2];
 let userInfo;
 const emailInput = document.querySelector('.emailIn');
 const pwdInput = document.querySelector('.pwdIn');

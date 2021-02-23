@@ -3,11 +3,8 @@ body{
     background-color: crimson;
 }
 
-.visible {
-  visibility: visible !important;
-}
-.invisible {
-  visibility: hidden !important;
+.afterLog{
+    display:none;
 }
 
 

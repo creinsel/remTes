@@ -17,7 +17,7 @@
         <div class="row">
             <nav class="navbar navbar-light bg-light">
                 <div class="container-fluid">
-                  <span class="navbar-brand mb-0">Remote Reminders</span><div class= 'logInHi float-end'></div>
+                  <span class="navbar-brand mb-0">Remote Reminders</span><div class= 'logInHi float-end'>
                 </div>
               </nav>
             </div>
@@ -39,10 +39,72 @@
       </div>
   </div>
 
-  <div class="row m-1">
-
-    <button class="afterLog">click</button>
+  <div class="row m-1 afterLog">
+    <div class="container">
+                
+      <div class="col-md-6 offset-md-3">
+  <div class="row align-items-center">
+     
+       <button type="button" class="btn btn-dark mt-5 float-end">Create Reminder</button>   
+      </div>
   </div>
+     
+  </div>
+
+  <div class="row mt-3 justify-content-evenly">
+  
+      <div class="col-md-2">
+          <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Proctors
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Pro Cassie</a></li>
+                <li><a class="dropdown-item" href="#">Regular Cassie</a></li>
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </div>
+      </div>
+  
+      <div class="col-md-2">
+          <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="mm/dd/yyyy" aria-label="date" aria-describedby="button-addon2">
+              
+            </div>
+      </div>
+      <div class="col-md-2">
+          <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Time
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">9:00 am</a></li>
+                <li><a class="dropdown-item" href="#">9:30 am</a></li>
+                <li><a class="dropdown-item" href="#">10:00 am</a></li>
+              </ul>
+            </div>
+      </div>
+      <div class="col-md-2">
+          <input type="text" class="form-control" placeholder="Tester Name" aria-label="tName" aria-describedby="button-addon2">
+          
+        </div>
+     
+      <div class="col-md-2">
+          <input type="text" class="form-control" placeholder="phone number" aria-label="tNumber" aria-describedby="button-addon2"></div>
+    
+     
+  </div>
+  <div class="row align-items-center">
+      <div class="col-md-6">
+      <button type="button" class="btn btn-dark float-end mt-5">Submit</button>
+  </div>
+  </div>
+
+</div>
+  </div>
+
+
+
 </div>
 
 
@@ -51,5 +113,6 @@
 
         
         <script src="./assets/app.js" async defer></script>
+      
     </body>
 </html>

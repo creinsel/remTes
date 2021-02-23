@@ -14,7 +14,7 @@ const showAf= document.querySelector('.afterLog');
 hideAf.style.display = "block";
 
 
-showLog? showAf.style.display = 'none': showAf.style.display = 'null';
+
 
 
 loginAccont.addEventListener('click', function (e) {
@@ -27,18 +27,19 @@ loginAccont.addEventListener('click', function (e) {
 
     if (userInfo?.password === pwdInput.value){
          alert('Logged in!');
-         showLog= false;
         emailInput.value = pwdInput.value = '';
+        showAf.classList.remove('afterLog');
         hideAf.style.display = "none";
-        hiYou.textContent= `Hello ${userInfo.name}!!!`
+        hiYou.textContent= `Hello ${userInfo.name}!!!`;
+        
 
     }else{
         alert('Incorrect password');
-        showLog=true;
+        
         
     }; 
     inputLoginUsername.value = inputLoginPin.value = '';
-    inputLoginPin.blur();
+    
     
     
   });
